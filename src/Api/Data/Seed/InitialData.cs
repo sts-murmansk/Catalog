@@ -1,5 +1,3 @@
-using Api.Model;
-
 namespace Api.Data.Seed;
 
 public class InitialData

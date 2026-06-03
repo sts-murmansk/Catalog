@@ -1,7 +1,3 @@
-using Api.Model;
-using Marten;
-using Marten.Schema;
-
 namespace Api.Data.Seed;
 
 public class InitializeBookDatabase : IInitialData
