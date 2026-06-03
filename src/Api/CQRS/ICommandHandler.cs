@@ -1,5 +1,3 @@
-using MediatR;
-
 namespace Api.CQRS;
 
 public interface ICommandHandler<in TCommand, TResponse>
