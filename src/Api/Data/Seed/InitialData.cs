@@ -114,5 +114,4 @@ public class InitialData
         Category = new List<string> { "Классическая литература", "Сатира" }
       }
     };
-
 }

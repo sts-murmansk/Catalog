@@ -11,5 +11,4 @@ public class InitializeBookDatabase : IInitialData
             await session.SaveChangesAsync(cancellation);
         }
     }
-
 }

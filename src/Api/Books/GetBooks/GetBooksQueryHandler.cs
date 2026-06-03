@@ -16,5 +16,4 @@ public class GetBooksQueryHandler(IDocumentSession session)
             
         return new GetBooksResult(books);
     }
-
 }
