@@ -23,7 +23,7 @@ public class ValidationBehavior<TRequest, TResponse>
 
         if (failures.Any())
         {
-            throw new Exception("Ошибка валидации.");
+            throw new ValidationException(failures);
         }
 
         return await next();
