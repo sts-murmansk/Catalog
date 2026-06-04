@@ -1,6 +1,4 @@
 
-using Api.Exceptions;
-
 namespace Api.Books.UpdateBook;
 
 public record UpdateBookResult(bool IsSuccess);
@@ -38,12 +36,6 @@ public class UpdateBookCommandHandler(IDocumentSession session)
             throw new BookNotFoundException(command.Id);
         }
 
-        /*book.Title = command.Title;
-        book.Name = command.Name;
-        book.Description = command.Description;
-        book.ImageUrl = command.ImageUrl;
-        book.Price = command.Price;
-        book.Category = command.Category;*/
         command.Adapt(book);
         session.Update(book);
 

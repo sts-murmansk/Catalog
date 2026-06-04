@@ -12,3 +12,4 @@ global using Microsoft.AspNetCore.Mvc;
 global using Api.Model;
 global using Api.Data.Seed;
 global using Api.CQRS;
+global using Api.Exceptions;
