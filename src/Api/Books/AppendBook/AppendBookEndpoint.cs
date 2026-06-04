@@ -18,7 +18,6 @@ public class AppendBookEndpoint : ICarterModule
         app.MapPost("/books", async (
             AppendBookRequest request,
             ISender sender
-
         ) =>
         {
             var command = request.Adapt<AppendBookCommand>();

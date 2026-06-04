@@ -16,6 +16,12 @@ public class CustomExceptionHandler(ILogger<CustomExceptionHandler> logger)
 
         (string Detail, string Title, int StatusCode) details = exception switch
         {
+            BookNotFoundException =>
+            (
+                exception.Message,
+                exception.GetType().Name,
+                httpContext.Response.StatusCode = StatusCodes.Status404NotFound
+            ),
             _ => (
                 exception.Message,
                 exception.GetType().Name,
